@@ -20,6 +20,12 @@ html {
         height: calc(calc(var(--vh, 1vh) * 100) - var(--headerHeight));
         overflow-y: scroll;
       }
+      h1.page-title {
+        color: var(--textColor);
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+      }
       h2.page-title {
         color: var(--textColor);
         margin: 0;

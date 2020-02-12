@@ -1,18 +1,12 @@
 import React from "react";
-import { Col, Row, Container } from "reactstrap";
+import { Container } from "reactstrap";
 
 const StartPage = () => {
   return (
     <Container fluid className="startpage">
-      <h2 className="page-title">Startsida</h2>
-      {/* <Row className="text-center">
-        <Col lg={4}>
-          <h3>Info</h3>
-        </Col>
-        <Col lg={4}>
-          <h3>Modal</h3>
-        </Col>
-      </Row> */}
+      <h1 className="page-title">startpage</h1>
+
+      <h2 className="page-title">test</h2>
     </Container>
   );
 };
