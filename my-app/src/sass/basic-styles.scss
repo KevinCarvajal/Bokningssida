@@ -52,7 +52,8 @@ html {
       font-family: "Montserrat", sans-serif;
     }
     .primary-btn,
-    .secondary-btn {
+    .secondary-btn,
+    .third-btn {
       margin: 0 auto;
       width: 100%;
       padding: 10px;
@@ -73,6 +74,13 @@ html {
       background-color: transparent;
       border: 1px solid var(--primary);
       color: var(--primary);
+    }
+    .third-btn {
+      border: 1px solid var(--loginbutton);
+      background-color: white;
+      color: var(--loginbutton);
+      border-radius: 0px;
+      padding: 1.5rem;
     }
   }
 }
