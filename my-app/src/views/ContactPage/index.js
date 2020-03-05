@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Form, Col, Row, Input, Label, Button, FormText } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Container, Form, Col, Row, Input, Label, Button } from "reactstrap";
 
 const RegisterPage = () => {
   return (
