@@ -9,6 +9,7 @@ import StartPage from "./views/StartPage";
 import LoginPage from "./views/LoginPage";
 import RegisterPage from "./views/RegisterPage";
 import ContactPage from "./views/ContactPage";
+import EventPage from "./views/EventPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route exact path="/LoginPage" component={LoginPage} />
             <Route exact path="/RegisterPage" component={RegisterPage} />
             <Route exact path="/ContactPage" component={ContactPage}/>
+            <Route exact path="/EventPage" component={EventPage}/>
           </Switch>
         </main>
       </div>
