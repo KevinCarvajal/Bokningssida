@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import StartPage from "./views/StartPage";
 import LoginPage from "./views/LoginPage";
 import RegisterPage from "./views/RegisterPage";
+import ContactPage from "./views/ContactPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route exact path="/" component={StartPage} />
             <Route exact path="/LoginPage" component={LoginPage} />
             <Route exact path="/RegisterPage" component={RegisterPage} />
+            <Route exact path="/ContactPage" component={ContactPage}/>
           </Switch>
         </main>
       </div>
