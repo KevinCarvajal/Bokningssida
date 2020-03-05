@@ -8,7 +8,7 @@ import {
   } from 'reactstrap';
 
   import {Link} from "react-router-dom"
-  
+
   import { Menu } from "react-feather"
 
 
@@ -28,6 +28,9 @@ const Header = () => {
             </NavItem>
             <NavItem>
               <Link to="/RegisterPage">Register</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/ContactPage">Contact</Link>
             </NavItem>
           </Nav>
         </Collapse>
