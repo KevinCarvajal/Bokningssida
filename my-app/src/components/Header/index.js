@@ -32,6 +32,9 @@ const Header = () => {
             <NavItem>
               <Link to="/ContactPage">Contact</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/EventPage">Events</Link>
+            </NavItem>
           </Nav>
         </Collapse>
     </Navbar>
