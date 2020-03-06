@@ -24,16 +24,19 @@ const Header = () => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <Link to="/LoginPage">Login</Link>
+              <Link to="/LoginPage">Logga in</Link>
             </NavItem>
             <NavItem>
-              <Link to="/RegisterPage">Register</Link>
+              <Link to="/RegisterPage">Registrera</Link>
             </NavItem>
             <NavItem>
-              <Link to="/ContactPage">Contact</Link>
+              <Link to="/ContactPage">Kontakta oss</Link>
             </NavItem>
             <NavItem>
-              <Link to="/EventPage">Events</Link>
+              <Link to="/EventPage">Tjänster</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/BookPage">Booka</Link>
             </NavItem>
           </Nav>
         </Collapse>
