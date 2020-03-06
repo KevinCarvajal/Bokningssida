@@ -10,6 +10,7 @@ import LoginPage from "./views/LoginPage";
 import RegisterPage from "./views/RegisterPage";
 import ContactPage from "./views/ContactPage";
 import EventPage from "./views/EventPage";
+import BookPage from "./views/BookPage";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route exact path="/RegisterPage" component={RegisterPage} />
             <Route exact path="/ContactPage" component={ContactPage}/>
             <Route exact path="/EventPage" component={EventPage}/>
+            <Route exact path="/BookPage" component={BookPage}/>
           </Switch>
         </main>
       </div>

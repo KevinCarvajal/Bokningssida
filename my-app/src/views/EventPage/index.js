@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button, Col } from "reactstrap";
 
+
   import Dans from "../../images/Danslokal.jpg";
   import Repan  from "../../images/Repan.jpg";
   import Konferens from "../../images/Konferensrummet.jpg";
