@@ -4,20 +4,22 @@ import {
     Navbar,
     NavbarBrand,
     Nav,
-    NavItem
+    NavItem,
+    CustomInput
   } from 'reactstrap';
 
   import {Link} from "react-router-dom"
-
   import { Menu } from "react-feather"
 
 
 const Header = () => {
+  
     const [collapsed, setCollapsed] = useState(true);
 
     const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
+    
     <Navbar className="Navbar">
        <NavbarBrand href="/" className="mr-auto">Havanna</NavbarBrand>
         <Menu onClick={toggleNavbar} className="mr-2" />
@@ -39,6 +41,9 @@ const Header = () => {
               <Link to="/BookPage">Booka</Link>
             </NavItem>
           </Nav>
+          <CustomInput
+       type="switch" id="exampleCustomSwitch" name="customSwitch"
+       />
         </Collapse>
     </Navbar>
   );
