@@ -8,6 +8,11 @@ import { Container, Row, Card, CardImg, CardText, CardBody,
   import Konferens from "../../images/Konferensrummet.jpg";
 
 const EventPage = () => {
+  function HandleClick(e){
+    e.preventDefault();
+    console.log('was clicked');
+}
+
   return (
     <Container fluid className="eventpage">
       <h2 className="page-title">Våra tjänster</h2>
@@ -22,8 +27,12 @@ const EventPage = () => {
                 <CardSubtitle>TID: 45min</CardSubtitle>
                 </Col>
             </Row>
-          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en genomgång av lokalerna och fått en tagg/bricka. Haru inte fått det kontaktar du först kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
-          <Button>Button</Button>
+          <CardText className="text-center">
+            OBS! Här bokar du tider när du eller någon i din grupp 
+            fått en genomgång av lokalerna och fått en tagg/bricka.
+            Haru inte fått det kontaktar du först 
+            kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
+          <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
         </CardBody>
       </Card>
 
@@ -38,8 +47,11 @@ const EventPage = () => {
                 <CardSubtitle>TID: 45min</CardSubtitle>
                 </Col>
             </Row>
-          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en genomgång av lokalerna och fått en tagg/bricka. Haru inte fått det kontaktar du först kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
-          <Button>Button</Button>
+          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en 
+          genomgång av lokalerna och fått en tagg/bricka. 
+          Haru inte fått det kontaktar du först kevin.carvajal@example.com för 
+          att komma igång med verksamhet på ------</CardText>
+          <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
         </CardBody>
       </Card>
 
@@ -54,8 +66,11 @@ const EventPage = () => {
                 <CardSubtitle>TID: 45min</CardSubtitle>
                 </Col>
             </Row>
-          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en genomgång av lokalerna och fått en tagg/bricka. Haru inte fått det kontaktar du först kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
-          <Button>Button</Button>
+          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått 
+          en genomgång av lokalerna och fått en tagg/bricka. 
+          Haru inte fått det kontaktar du först kevin.carvajal@example.com 
+          för att komma igång med verksamhet på ------</CardText>
+          <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
         </CardBody>
       </Card>
 
