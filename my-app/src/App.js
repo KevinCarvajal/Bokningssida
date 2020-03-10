@@ -11,6 +11,7 @@ import RegisterPage from "./views/RegisterPage";
 import ContactPage from "./views/ContactPage";
 import EventPage from "./views/EventPage";
 import BookPage from "./views/BookPage";
+import { Button } from "reactstrap";
 
 const App = () => {
   const [darkmode, setDarkmode] = useState(false)
@@ -18,7 +19,7 @@ const App = () => {
     <Router>
 <div className={darkmode ? 'App dark-mode' : 'App'}>
         <Header/>
-        <button onClick={()=>setDarkmode(!darkmode)}>TOGGLE MODE</button>
+        <Button onClick={()=>setDarkmode(!darkmode)}>TOGGLE MODE</Button>
         <main>
           <Switch>
             <Route exact path="/" component={StartPage} />

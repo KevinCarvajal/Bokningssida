@@ -33,8 +33,9 @@ const EventPage = () => {
             fått en genomgång av lokalerna och fått en tagg/bricka.
             Haru inte fått det kontaktar du först 
             kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
+            <Row className="mt-3"> 
           <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
-        </CardBody>
+          </Row>        </CardBody>
       </Card>
 
       <Card>
@@ -52,8 +53,9 @@ const EventPage = () => {
           genomgång av lokalerna och fått en tagg/bricka. 
           Haru inte fått det kontaktar du först kevin.carvajal@example.com för 
           att komma igång med verksamhet på ------</CardText>
+          <Row className="mt-3"> 
           <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
-        </CardBody>
+          </Row>        </CardBody>
       </Card>
 
       <Card>
@@ -71,7 +73,9 @@ const EventPage = () => {
           en genomgång av lokalerna och fått en tagg/bricka. 
           Haru inte fått det kontaktar du först kevin.carvajal@example.com 
           för att komma igång med verksamhet på ------</CardText>
+          <Row className="mt-3"> 
           <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
+          </Row>
         </CardBody>
       </Card>
 
@@ -86,8 +90,13 @@ const EventPage = () => {
                 <CardSubtitle>TID: 45min</CardSubtitle>
                 </Col>
             </Row>
-          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en genomgång av lokalerna och fått en tagg/bricka. Haru inte fått det kontaktar du först kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
-          <Button>Button</Button>
+          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp 
+          fått en genomgång av lokalerna och fått en tagg/bricka. 
+          Haru inte fått det kontaktar du först kevin.carvajal@example.com 
+          för att komma igång med verksamhet på ------</CardText>
+          <Row className="mt-3">
+          <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
+          </Row>
         </CardBody>
       </Card>
 
