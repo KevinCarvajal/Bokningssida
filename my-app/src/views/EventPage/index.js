@@ -5,7 +5,8 @@ import { Container, Row, Card, CardImg, CardText, CardBody,
 
   import Dans from "../../images/Danslokal.jpg";
   import Repan  from "../../images/Repan.jpg";
-  import Konferens from "../../images/Konferensrummet.jpg";
+  import Konferens from "../../images/Konferensrum.jpg";
+  import Studio from "../../images/Musikstudio.jpg"
 
 const EventPage = () => {
   function HandleClick(e){
@@ -71,6 +72,22 @@ const EventPage = () => {
           Haru inte fått det kontaktar du först kevin.carvajal@example.com 
           för att komma igång med verksamhet på ------</CardText>
           <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Boka</Button>
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardImg top width="100%" src={Studio} alt="Card image cap" />
+        <CardBody>
+            <Row>
+                <Col>
+                <CardTitle>Musikstudio</CardTitle>
+                </Col>
+                <Col>
+                <CardSubtitle>TID: 45min</CardSubtitle>
+                </Col>
+            </Row>
+          <CardText className="text-center">OBS! Här bokar du tider när du eller någon i din grupp fått en genomgång av lokalerna och fått en tagg/bricka. Haru inte fått det kontaktar du först kevin.carvajal@example.com för att komma igång med verksamhet på ------</CardText>
+          <Button>Button</Button>
         </CardBody>
       </Card>
 
