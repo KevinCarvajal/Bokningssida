@@ -14,16 +14,21 @@ const RegisterPage = () => {
 
      <Form className="RegisterForm">
     <Row>
-        <Col sm={12} className="name">
+        <Col className="name">
+        <Label>Efternamn</Label>
+        <Input placeholder="Efternamn" type="text"></Input>
+        </Col>
+        <Col className="name">
         <Label>Förnamn</Label>
         <Input placeholder="Förnamn" type="text"></Input>
         </Col>
+        
     </Row>
 
     <Row>
-    <Col sm={12} className="name">
-        <Label>Efternamn</Label>
-        <Input placeholder="Efternamn" type="text"></Input>
+    <Col className="name">
+        <Label>Användarnamn</Label>
+        <Input placeholder="bengt12" type="text"></Input>
         </Col>
     </Row>
     <Row>
@@ -54,6 +59,10 @@ const RegisterPage = () => {
 
         </Col>
     </Row>
+    <Button
+    className="primary-btn sending"
+    onClick={HandleClick}
+    >Skapa konto</Button>
      </Form>
 
      
