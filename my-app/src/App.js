@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Button } from "reactstrap";
 
 //components
 import Header from "./components/Header";
@@ -11,7 +12,6 @@ import RegisterPage from "./views/RegisterPage";
 import ContactPage from "./views/ContactPage";
 import EventPage from "./views/EventPage";
 import BookPage from "./views/BookPage";
-import { Button } from "reactstrap";
 
 const App = () => {
   const [darkmode, setDarkmode] = useState(false)

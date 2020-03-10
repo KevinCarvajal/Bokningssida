@@ -59,10 +59,6 @@ const RegisterPage = () => {
 
         </Col>
     </Row>
-    <Button
-    className="primary-btn sending"
-    onClick={HandleClick}
-    >Skapa konto</Button>
      </Form>
 
      

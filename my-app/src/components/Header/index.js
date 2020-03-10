@@ -2,7 +2,6 @@ import React, {useState } from "react";
 import {
     Collapse,
     Navbar,
-    NavbarBrand,
     Nav,
     NavItem,
     CustomInput
@@ -17,11 +16,14 @@ const Header = () => {
     const [collapsed, setCollapsed] = useState(true);
 
     const toggleNavbar = () => setCollapsed(!collapsed);
+    const [darkmode, setDarkmode] = useState(false)
 
   return (
     
-    <Navbar className="Navbar">
-       <NavbarBrand href="/" className="mr-auto">Havanna</NavbarBrand>
+    <Navbar className="Navbar" >
+       <Link to="/" className="mr-center">
+           Havanna
+         </Link>
         <Menu onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
@@ -41,9 +43,10 @@ const Header = () => {
               <Link to="/BookPage">Booka</Link>
             </NavItem>
           </Nav>
-          <CustomInput
+          <CustomInput onClick={()=>setDarkmode(!darkmode)}
        type="switch" id="exampleCustomSwitch" name="customSwitch"
        />
+       {/* <div className={darkmode ? 'App dark-mode' : 'App'}></div> */}
         </Collapse>
     </Navbar>
   );
