@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //components
@@ -13,10 +13,12 @@ import EventPage from "./views/EventPage";
 import BookPage from "./views/BookPage";
 
 const App = () => {
+  const [darkmode, setDarkmode] = useState(false)
   return (
     <Router>
-      <div className="App">
-      <Header/>
+<div className={darkmode ? 'App dark-mode' : 'App'}>
+        <Header/>
+        <button onClick={()=>setDarkmode(!darkmode)}>TOGGLE MODE</button>
         <main>
           <Switch>
             <Route exact path="/" component={StartPage} />
