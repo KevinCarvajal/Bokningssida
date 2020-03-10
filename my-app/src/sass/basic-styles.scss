@@ -78,10 +78,17 @@ html {
     }
     .third-btn {
       border: 1px solid var(--loginbutton);
-      background-color: white;
+      background-color:var(--background);
       color: var(--loginbutton);
       border-radius: 0px;
       padding: 1.5rem;
+    }
+    table{
+      color: var(--textColor);
+    }
+    .card-body{
+      color: var(--textColor);
+      background-color: var(--background);
     }
   }
 }

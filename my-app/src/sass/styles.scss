@@ -10,10 +10,11 @@
 
 // Components Styling
 @import "../components/Header/styles";
-
+@import "../components/Calendar/styles";
 
 // Views Styling
 @import "../views/StartPage/styles";
 @import "../components/Footer-mobile/styles";
 @import "../views/RegisterPage/styles";
 @import "../views/ContactPage/styles";
+@import "../views/EventPage/styles";

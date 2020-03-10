@@ -4,12 +4,15 @@
   --primary: #07575b;
   --headerBackground: #003b46;
   --loginbutton: #707070;
-}
-.dark-mode {
+
+&.dark-mode {
   --textColor: #eee;
   --background: #393e46;
   --primary: #4ecca3;
   --headerBackground: #232931;
+  --loginbutton: #eee;
+
+}
 }
 
 .App {

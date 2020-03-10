@@ -3,6 +3,11 @@ import { Container, Form, Col, Row, Input, Label, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
+    function HandleClick(e){
+        e.preventDefault();
+        console.log('was clicked');
+    }
+
   return (
     <Container fluid className="RegisterPage">
       <h2 className="page-title">Registera</h2>
@@ -45,11 +50,12 @@ const RegisterPage = () => {
     <Col sm={12} className="name">
         <Label>Bekräfta Lösenord</Label>
         <Input placeholder="********" type="password"></Input>
+        <Button onClick={HandleClick} className="secondary-btn mr-right btn btn-secondary">Skapa konto</Button>
+
         </Col>
     </Row>
      </Form>
 
-     <Button className="primary-btn">Skapa konto</Button>
      
      <Row className="info">
          <Col>Har du redan ett konto?</Col>
