@@ -27,6 +27,7 @@ const LoginPage = () => {
           </Col>
         </Row>
       </Form>
+
       <FooterMobile />
     </Container>
   );
